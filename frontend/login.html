@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="page login-page">
+    <div class="login-layout">
+        <aside class="login-side">
+            <div class="side-decor"></div>
+            <div class="side-content">
+                <div class="side-brand">
+                    <div class="logo">LS</div>
+                    <div>
+                        <p class="eyebrow">Live System</p>
+                        <h1>Monitor your systems with confidence</h1>
+                    </div>
+                </div>
+
+                <p class="side-text">Fast, secure access to real-time metrics and uptime intelligence. Manage your infrastructure from one modern dashboard.</p>
+
+                <ul class="feature-list">
+                    <li>Instant system insights</li>
+                    <li>Secure user authentication</li>
+                    <li>Responsive dashboard experience</li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="login-card">
+            <div class="form-header">
+                <p class="eyebrow">Sign in</p>
+                <h2>Welcome back</h2>
+                <p class="form-instruction">Enter your credentials to continue to the dashboard.</p>
+            </div>
+
+            <form onsubmit="event.preventDefault(); login();">
+                <label class="field">
+                    <span>Username</span>
+                    <input type="text" id="username" placeholder="Username" required>
+                </label>
+
+                <label class="field">
+                    <span>Password</span>
+                    <input type="password" id="password" placeholder="Password" required>
+                </label>
+
+                <button class="primary-button" type="submit">Login</button>
+            </form>
+
+            <p class="footnote">Need help? Contact your system administrator.</p>
+        </section>
+    </div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

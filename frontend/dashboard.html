@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="page dashboard-page">
+    <header class="topbar">
+        <div>
+            <p class="eyebrow">Live System Dashboard</p>
+            <h1>System Overview</h1>
+            <p class="subtitle">Real-time usage, active sessions, and server status.</p>
+        </div>
+        <button class="secondary-button" onclick="window.location.href='login.html'">Logout</button>
+    </header>
+
+    <section class="stats-grid">
+        <article class="card stat-card">
+            <p class="card-label">CPU Usage</p>
+            <p class="card-value"><span id="cpu">0</span>%</p>
+        </article>
+
+        <article class="card stat-card">
+            <p class="card-label">Memory Usage</p>
+            <p class="card-value"><span id="memory">0</span>%</p>
+        </article>
+
+        <article class="card stat-card">
+            <p class="card-label">Active Users</p>
+            <p class="card-value"><span id="users">0</span></p>
+        </article>
+
+        <article class="card stat-card">
+            <p class="card-label">Server Time</p>
+            <p class="card-value"><span id="time">Loading...</span></p>
+        </article>
+    </section>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
